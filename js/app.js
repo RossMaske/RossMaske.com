@@ -44,7 +44,3 @@ else{
 	}
 }
 });
-
-var p = $( "#profile-photo" );
-var position = p.position();
-$( "p:last" ).text( "left: " + position.left + ", top: " + position.top );

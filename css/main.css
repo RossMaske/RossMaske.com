@@ -142,7 +142,7 @@ PAGE: PORTFOLIO
 #gallery li a p {
   margin: 0;
   padding: 5%;
-  font-size: 0.75em;
+  font-size: 1em;
   color: #bdc3c7
 }
 
@@ -159,6 +159,18 @@ PAGE: ABOUT
   border-radius: 100%;
 
 }
+
+/*
+#me{
+display: block;
+max-width: 100%;
+margin: 0 auto 30px;
+border-radius: 100%;
+background-image: url('../img/cameron.png');
+width:100px;
+height: 100px;
+}
+*/
 
 /**********************************
 PAGE: CONTACT
@@ -191,6 +203,8 @@ PAGE: CONTACT
 .contact-info li.twitter a {
   background-image: url('../img/twitter.png');
 }
+
+
 
 
 
