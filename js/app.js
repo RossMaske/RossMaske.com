@@ -14,32 +14,35 @@ $( "html" ).mousemove(function( event ) {
   var rads= Math.atan2(y, x) ;
   var degree = rads / (Math.PI/180);
  $( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
-  
+if (x>-25 && x<25 && y>-25 && y<25){
+		$( "#profile-photo").attr( "src", "img/me.jpg" );
+	}
+else{
 	if (degree > -22.5 && degree < 22.5 ) {
 		$( "#profile-photo").attr( "src", "img/meright.jpg" );
 	}
-	if (degree > 22.5 && degree < 67.5  ) {
+	else if (degree > 22.5 && degree < 67.5  ) {
 		$( "#profile-photo").attr( "src", "img/meupright.jpg" );
 	}
-	if(degree > 67.5 && degree < 112.5 ) {
+	else if(degree > 67.5 && degree < 112.5 ) {
 		$( "#profile-photo").attr( "src", "img/meup.jpg" );
 	}
-	if ( degree > 112.5 && degree < 157.5 ) {
+	else if ( degree > 112.5 && degree < 157.5 ) {
 		$( "#profile-photo").attr( "src", "img/meupleft.jpg" );
 	}
-	if (degree > 157.5 && degree < 180 || degree > -180 && degree < -157.5 ) {
+	else if (degree > 157.5 && degree < 180 || degree > -180 && degree < -157.5 ) {
 		$( "#profile-photo").attr( "src", "img/meleft.jpg" );
 	}
-	if (degree > -157.5 && degree < -112.5 ) {
+	else if (degree > -157.5 && degree < -112.5 ) {
 		$( "#profile-photo").attr( "src", "img/medownleft.jpg" );
 	}
-	if (degree > -112.5 && degree < -67.5 ) {
+	else if (degree > -112.5 && degree < -67.5 ) {
 		$( "#profile-photo").attr( "src", "img/medown.jpg" );
 	}
-	if ( degree > -67.5 && degree < -22.5 ) {
+	else if ( degree > -67.5 && degree < -22.5 ) {
 		$( "#profile-photo").attr( "src", "img/medownright.jpg" );
 	}
-	
+}
 });
 
 var p = $( "#profile-photo" );
