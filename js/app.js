@@ -13,8 +13,8 @@ $( "html" ).mousemove(function( event ) {
   var grad=y/x;
   var rads= Math.atan2(y, x) ;
   var degree = rads / (Math.PI/180);
- $( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
-if (x>-25 && x<25 && y>-25 && y<25){
+ //$( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
+if (x>-61 && x<25 && y>-30 && y<60){
 		$( "#profile-photo").attr( "src", "img/me.jpg" );
 	}
 else{
@@ -24,10 +24,10 @@ else{
 	else if (degree > 22.5 && degree < 67.5  ) {
 		$( "#profile-photo").attr( "src", "img/meupright.jpg" );
 	}
-	else if(degree > 67.5 && degree < 112.5 ) {
+	else if(degree > 67.5 && degree < 95) {
 		$( "#profile-photo").attr( "src", "img/meup.jpg" );
 	}
-	else if ( degree > 112.5 && degree < 157.5 ) {
+	else if ( degree > 95 && degree < 157.5 ) {
 		$( "#profile-photo").attr( "src", "img/meupleft.jpg" );
 	}
 	else if (degree > 157.5 && degree < 180 || degree > -180 && degree < -157.5 ) {
