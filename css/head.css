@@ -1,0 +1,8 @@
+.profile-photo {
+  backgorund-image: url('iimg/Ross.jpg');
+  width:100px;
+  height:100px;
+  background-size:100px 100px;
+  margin: 0 auto 30px;
+  background-position:0 -1 * 100px;
+}

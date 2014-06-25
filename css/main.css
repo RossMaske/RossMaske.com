@@ -6,7 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#wrapper {
+.wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
@@ -136,11 +136,12 @@ PAGE: PORTFOLIO
 PAGE: ABOUT
 ***********************************/
 
-.profile-photo {
+#profile-photo {
   display: block;
-  max-width: 150px;
+  max-width: 250px;
   margin: 0 auto 30px;
   border-radius: 100%;
+
 }
 
 /**********************************
