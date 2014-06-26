@@ -6,41 +6,41 @@
 
 $( "html" ).mousemove(function( event ) {
   var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
-  var p = $( "#profile-photo" );
+  var p = $( ".me1" );
   var position = p.position();
-  var x= event.clientX - position.left - 124;
-  var y= -event.clientY + position.top + 80;
+  var x= event.clientX - position.left - 100;
+  var y= -event.clientY + position.top + 100;
   var grad=y/x;
   var rads= Math.atan2(y, x) ;
   var degree = rads / (Math.PI/180);
- //$( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
-if (x>-61 && x<25 && y>-30 && y<60){
-		$( "#profile-photo").attr( "src", "img/me.jpg" );
+  $( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
+if (x>-61 && x<51 && y>-30 && y<60){
+		$( ".me1").attr( "id", "me" );
 	}
 else{
 	if (degree > -22.5 && degree < 22.5 ) {
-		$( "#profile-photo").attr( "src", "img/meright.jpg" );
+		$( ".me1").attr( "id", "meright" );
 	}
 	else if (degree > 22.5 && degree < 67.5  ) {
-		$( "#profile-photo").attr( "src", "img/meupright.jpg" );
+		$( ".me1").attr( "id", "meupright" );
 	}
-	else if(degree > 67.5 && degree < 95) {
-		$( "#profile-photo").attr( "src", "img/meup.jpg" );
+	else if(degree > 67.5 && degree < 130) {
+		$( ".me1").attr( "id", "meup" );
 	}
-	else if ( degree > 95 && degree < 157.5 ) {
-		$( "#profile-photo").attr( "src", "img/meupleft.jpg" );
+	else if ( degree > 130 && degree < 157.5 ) {
+		$( ".me1").attr( "id", "meupleft" );
 	}
 	else if (degree > 157.5 && degree < 180 || degree > -180 && degree < -157.5 ) {
-		$( "#profile-photo").attr( "src", "img/meleft.jpg" );
+		$( ".me1").attr( "id", "meleft" );
 	}
 	else if (degree > -157.5 && degree < -112.5 ) {
-		$( "#profile-photo").attr( "src", "img/medownleft.jpg" );
+		$( ".me1").attr( "id", "medownleft" );
 	}
 	else if (degree > -112.5 && degree < -67.5 ) {
-		$( "#profile-photo").attr( "src", "img/medown.jpg" );
+		$( ".me1").attr( "id", "medown" );
 	}
 	else if ( degree > -67.5 && degree < -22.5 ) {
-		$( "#profile-photo").attr( "src", "img/medownright.jpg" );
+		$( ".me1").attr( "id", "medownright" );
 	}
 }
 });

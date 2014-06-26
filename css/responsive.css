@@ -33,7 +33,13 @@
   PAGE: ABOUT
   ***********************************/
   
-  #profile-photo {
+  #space{
+  width:0px;
+  height: 0px;
+  margin: 0;
+}
+  
+  .me1 {
     float: left;
     margin: 0 5% 80px 0;
   }

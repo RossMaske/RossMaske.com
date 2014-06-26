@@ -152,25 +152,67 @@ PAGE: PORTFOLIO
 PAGE: ABOUT
 ***********************************/
 
-#profile-photo {
+.me1 {
   display: block;
   max-width: 250px;
   margin: 0 auto 30px;
-  border-radius: 100%;
-
+  border-radius: 0%;
+  width:200px;
+  height: 200px;
+  background-image: url('../img/cameron.png');
+  }
+  
+#me{
+  background-position:0 0px;
 }
 
+#meright{
+ background-position:0 -1000px;
+}
+
+#meupright{
+ background-position:0 -1200px;
+}
+
+#meup{
+ background-position:0 -1400px;
+}
+
+#meupleft{
+ background-position:0 -1600px;
+}
+
+#meleft{
+ background-position:0 -200px;
+}
+
+#medownleft{
+ background-position:0 -400px;
+}
+
+#medown{
+ background-position:0 -600px;
+}
+
+#medownright{
+ background-position:0 -800px;
+}
+
+
+
+#space{
+  width:5px;
+  height: 140px;
+  margin: 0;
+}
 /*
 #me{
-display: block;
-max-width: 100%;
-margin: 0 auto 30px;
-border-radius: 100%;
+float: center;
+margin: 0 5% 80px 0;
 background-image: url('../img/cameron.png');
-width:100px;
-height: 100px;
+width:200px;
+height: 200px;
 }
-*/
 
 /**********************************
 PAGE: CONTACT
