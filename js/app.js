@@ -13,7 +13,7 @@ $( "html" ).mousemove(function( event ) {
   var grad=y/x;
   var rads= Math.atan2(y, x) ;
   var degree = rads / (Math.PI/180);
-  $( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
+  //$( "span:last" ).text( "x: " + x  + "    y : "+ y  + "    degree:" + degree );
 if (x>-61 && x<51 && y>-30 && y<60){
 		$( ".me1").attr( "id", "me" );
 	}
